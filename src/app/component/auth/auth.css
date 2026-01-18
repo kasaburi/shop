@@ -1,0 +1,47 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    max-height: 180vh;
+    justify-content: center;
+    gap:8%;
+    padding-top: 15%;
+    
+}
+
+
+
+@media screen and (min-width: 901px) and (max-width: 1300px){
+
+section{
+    min-height: 165vh;
+
+
+}
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+
+section{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 98%;
+    min-height: 165vh;
+ 
+   
+}
+
+
+
+}
+
+@media screen and (max-width: 600px){
+section{
+    padding-top: 2%;
+    min-height: 260vh;
+    
+}
+}

@@ -1,0 +1,81 @@
+ <h2>Registration</h2>
+ <form [formGroup]="formInfo" (ngSubmit)="register()" class="form">
+    <div class="row">
+        <div class="field">
+            <label for="firstName">Name *</label>
+            <input type="firstName" class="firstName" name="firstName" type="text" placeholder="name" formControlName="firstName"/>
+        </div>
+        <div class="field">
+            <label for="lastName">lastName *</label>
+            <input type="lastName"  class="lastName" name="lastName" type="text" placeholder="lastName" formControlName="lastName" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="field">
+            <label for="age">Age *</label>
+            <input  type="number"  name="age"  class="age" min="1" max="120" placeholder="age"  formControlName="age" />
+        </div>
+        <div class="field">
+            <label for="gender">Gender *</label>
+            <select class="gender" name="gender"   formControlName="gender">
+                <option value="" class="other">აირჩიე…</option>
+                <option value="MALE" class="other">MALE</option>
+                <option value="FEMALE" class="other">FEMALE</option>
+                <option value="OTHER" class="other">OTHER</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="field">
+            <label for="email">Email *</label>
+            <input type="email"class="email" name="email"  placeholder="@mail.com" formControlName="email"/>
+        </div>
+        <div class="field1">
+            <label for="password">password *</label>
+            <input type="password" class="password" name="password" placeholder="password" required minlength="6" formControlName="password" >
+            <div class="showPassword">
+                <input type="checkbox" class="showPassword">
+                <label for="showPassword"  class="parol">show Password</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="field">
+            <label for="address"><address></address> *</label>
+            <input type="text" class="address" name="address"  placeholder="address" formControlName="address" />
+        </div>
+        <div class="field">
+            <label for="phone">phone *</label>
+            <input
+                class="phone"
+                name="phone"
+                type="tel"
+                placeholder="+995599123456"
+                pattern="^\+995\d{9}$"
+                formControlName="phone" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="field">
+            <label for="zipcode">Zipcode (4 number) *</label>
+            <input type="text" class="zipcode" name="zipcode"  inputmode="numeric" pattern="^\d{4}$" placeholder="0178" formControlName="zipcode" />
+        </div>
+        <div class="field">
+            <label for="avatar">Avatar URL (DiceBear) *</label>
+            <input
+                class="avatar"
+                name="avatar"
+                type="url"
+                placeholder="https://api.dicebear.com/7.x/pixel-art/svg?seed=Jane"
+                formControlName="avatar" />
+            <div class="actions avatar-preview">
+                <img  [src]="img"  class="avatarImg" alt="avatar preview" >
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <button type="submit" class="primary">registration</button>
+    </div>
+    <div *ngIf="successMessage" class="success">{{successMessage }}</div>
+    <div *ngIf="errorMessage" class="error">{{errorMessage }}</div>
+ </form> 

@@ -1,0 +1,266 @@
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: space-between;
+    gap: 7%;
+    min-height: 63vh;
+}
+.bay{
+    height: 7vh;
+    width: 30vw;
+}
+.card{
+    display: flex;
+    gap: 10%;
+    width: 60vw;
+
+}
+.information{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.Log{
+    display: flex;
+    width: 30vw;
+}
+.twiter{
+     width: 50px;
+    height: 50px;
+     transition: transform 0.10s ease;
+}
+.twiter:hover{
+ transform: scale(1.1);
+}
+.facebook{
+     width: 50px;
+    height: 50px;
+     transition: transform 0.10s ease;
+}
+.facebook:hover{
+    transform: scale(1.1);
+}
+.instagram{
+    width: 50px;
+    height: 50px;
+  
+     transition: transform 0.10s ease;
+}
+.instagram:hover{
+     transform: scale(1.1);
+}
+
+.info1{
+    display: flex;
+    gap:5%;
+}
+.card1{
+     transition: transform 0.4s ease;
+}
+.card1:hover{
+     transform: scale(1.1);
+}
+
+.card2{
+     transition: transform 0.4s ease;
+}
+.card2:hover{
+     transform: scale(1.1);
+}
+
+.card3{
+     transition: transform 0.4s ease;
+}
+.card3:hover{
+     transform: scale(1.1);
+}
+
+.card4{
+     transition: transform 0.10s ease;
+}
+.card4:hover{
+     transform: scale(1.1);
+}
+.logo{
+     width: 90px;
+}
+
+.logo:hover{
+     transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 601px)   and (max-width: 900px){
+
+
+
+
+.bay{
+     width: 70vw;
+}
+
+.card{
+     width:90%;
+     justify-content: center;
+    
+}
+
+
+
+
+
+
+.card1{
+     width: 50px;
+     min-height: 30px;
+}
+.card2{
+   width: 50px;
+     min-height: 30px;
+}
+
+
+.card3{
+  width: 50px;
+     min-height: 30px;
+}
+.card4{
+  width: 50px;
+     min-height: 30px;
+}
+
+
+.Log{
+flex-direction: column;
+width: 60vw;
+}
+
+
+.twiter{
+     width: 40px;
+     max-height: 40px;
+}
+
+
+
+.facebook{
+      width: 40px;
+     max-height: 40px;
+}
+
+
+.instagram{
+       width: 40px;
+     max-height: 40px;
+     object-fit: cover;
+}
+
+.info{
+     align-content: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+
+
+.bay{
+     text-align: center;
+     width: 90%;
+     min-height: 13vh;
+}
+
+.card{
+     width:90%;
+     justify-content: center;
+    
+}
+
+
+
+
+.card1{
+     width: 50px;
+     min-height: 30px;
+}
+.card2{
+   width: 50px;
+     min-height: 30px;
+}
+
+
+.card3{
+  width: 50px;
+     min-height: 30px;
+}
+.card4{
+  width: 50px;
+     min-height: 30px;
+}
+
+
+.Log{
+     justify-content: space-between;
+width: 90vw;
+text-align: center;
+
+
+}
+
+
+.twiter{
+     width: 30px;
+     max-height: 30px;
+}
+
+.information{
+     display: flex;
+     flex-direction: column;
+  
+    
+}
+
+.facebook{
+      width: 30px;
+     max-height: 30px;
+}
+.info1{
+
+    justify-content: center;
+}
+
+.instagram{
+       width: 30px;
+     max-height: 30px;
+     object-fit: cover;
+}
+}

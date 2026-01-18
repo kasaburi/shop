@@ -1,0 +1,126 @@
+<div class="boot"> 
+    <form [formGroup]="filterForm" class="filters">
+        <div class="search">
+             <input formControlName="keywords" placeholder="Search" class="inbox"/>
+             <button  class="one"><img [src]="img1" class="imge" alt="img"></button>
+        </div>
+        <div class="filter">
+            <input formControlName="price_min" placeholder="Min Price" type="number"  class="min"/>
+            <input formControlName="price_max" placeholder="Max Price" type="number" class="max"/>
+            <select formControlName="sort_by"  class="sort">
+                <option value="">Default</option>
+                <option value="rating"  >Rating </option>
+                <option value="price">Price</option>
+                <option value="title" checked>name</option>
+                <option value="issue_date"> Date</option>
+            </select>
+            <select formControlName="sort_direction" class="desc">
+                <option value="asc">Asc ⬇️</option>
+                <option value="desc">Desc⬆️ </option>
+            </select>
+        <div>
+            <button class="reset" (click)="reset()">🔄 Reset Filters</button>
+        </div>
+    </div>
+    </form>
+    <div class="conteiner">
+        <div class="in">
+            <div class="filter-product">
+                <div class="wapper">
+                    <button (click)="openPopup()" class="pop">➕ Filter</button>
+                    @if (showPopup) {
+                    <div class="popup-overlay" (click)="closePopup()">
+                        <div class="popup-content" (click)="$event.stopPropagation()">
+                            <div class="popup-header">
+                                <h3   >Filters</h3>
+                                <button class="close-btn" (click)="closePopup()">✖</button>
+                            </div>
+                            <div class="dropdown-block">
+                                <h4 class="cat">Category</h4>
+                                <div class="filter-btn" (click)="toggleCategories()">
+                                        {{ selectedCategoryName || 'Choose Category' }}
+                                    <span class="arrow">&#9662;</span>
+                                </div>
+                                <ul *ngIf="showCategories" class="dropdown-list">
+                                    <li *ngFor="let item of categories" 
+                                        (click)="selectCategory(item.id, item.name); showCategories=false"
+                                        [ngClass]="{active: filterForm.value.category_id === item.id}">
+                                        <img [src]="item.image" alt="{{item.name}}" class="img1">
+                                        <p>{{ item.name }}</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-block">
+                                <h4 class="cat1">Brands</h4>
+                                <div class="filter-btn" (click)="toggleBrands()">
+                                        {{ selectedBrand || 'Choose Brand' }}
+                                    <span class="arrow">&#9662;</span>
+                                </div>
+                                <ul *ngIf="showBrands" class="list">
+                                    <li *ngFor="let brand of brands" (click)="selectBrand(brand); showBrands=false"
+                                        [ngClass]="{active: filterForm.value.brand === brand}">
+                                        {{ brand.toUpperCase() }}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reset-block">
+                                <button class="reset-btn" (click)="reset()">🔄 Reset Filters</button>
+                            </div>
+                        </div>
+                    </div> }
+                </div>
+            </div>
+            <div class="section-wapper">
+                <h2>Our products</h2>
+                <section>
+                    @for (item of allProducts; track $index) {
+                    <div class="products">
+                        <div class="div1">
+                            <div class="index">
+                                @if (item.stock <=0) {
+                                <p class=stock>Out of stock{{item.stock}}</p>} 
+                            @if (item.price.discountPercentage !==0) {
+                                <div class="border1">
+                                    <p  class="item">{{item.price.discountPercentage}}% </p>
+                                </div>}
+                                <div class="price">
+                                    <span class="current"> {{ item.price.current }}{{ item.price.currency }}$</span>
+                                    <span class="before" *ngIf="item.price.discountPercentage > 0">
+                                    {{ item.price.beforeDiscount }} {{ item.price.currency }}$
+                                    </span>
+                                </div>
+                            </div>
+                            <img [src]="item.thumbnail" alt="photo" (error)="onImageError($event)" class="img">
+                        </div>
+                        <div class="card-content">
+                            <a [routerLink]="['/card', item._id]"  class="link">{{ item.title }}</a>
+                            <div class="border">
+                                <p class="rat"><b>Rating </b> {{ item.rating }} ⭐</p> 
+                                 <button *ngIf="item.stock > 0" (click)="addToCart(item)" class="card">Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>}
+                    @empty {<h1>No Items Match Your Filter</h1>}
+                </section>          
+            </div>
+            <div class="pagination">
+            @for (page of pageList; track $index) {
+                <button [ngClass]="{active: page === myPageIndex}" (click)="changePage(page)">{{ page }}
+                </button>}
+            </div>
+        </div>
+    </div>
+</div>
+                
+          
+
+
+
+
+
+
+
+
+
+

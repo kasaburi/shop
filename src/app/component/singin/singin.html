@@ -1,0 +1,22 @@
+<div class="box">
+    <h2>Authorization</h2>
+    <form [formGroup]="loginFormInfo" (ngSubmit)="login()" class="form">
+        <label for="email">email</label>
+            <input type="email" class="email" name="email" placeholder="@mail.com" formControlName="email" >
+            <label for="password">password</label>
+            <input type="password" class="password" name="password"placeholder="password" required minlength="6" formControlName="password">
+            <button type="submit" class="submit">log in</button>
+            <div *ngIf="successMessage" class="success">{{ successMessage }}</div>
+            <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+    </form>
+    <img [src]="img" alt="icon" class="img">
+    <div class="security">
+        <h4>Online security</h4>
+        <p>Protect your personal data when registering or logging in ✔️</p>
+        <ol>
+            <li>Use complex passwords with a variety of characters ✔️</li>
+            <li>Use different passwords for different accounts ✔️</li>
+            <li>Enable two-factor authentication (2FA) for extra security ✔️ </li>
+        </ol>
+    </div>
+</div>

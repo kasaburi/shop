@@ -1,0 +1,61 @@
+<div>
+    <nav class="nav">
+        <div class="inbox">
+            <div class="box">
+                <img [src]="img" class="img" alt="img">
+                <p class="shop"> Shop.ge</p>
+            </div>
+            <div class="burger" (click)="toggleMenu()">
+                <div [class.open]="menuOpen"></div>
+                <div [class.open]="menuOpen"></div>
+                <div [class.open]="menuOpen"></div>
+            </div>
+            <div>
+                <ul class="one">
+                    <li class="lihome" >
+                        <a routerLink="/" routerLinkActive="mimdinare" [routerLinkActiveOptions]="{exact:true} " (click)="closeMenu()" >Home</a>
+                    </li>
+                    <li class="lihome">
+                        <a routerLink="/product" routerLinkActive="mimdinare" [routerLinkActiveOptions]="{exact:true}"  (click)="closeMenu()" >All Product</a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="overlay" [class.open]="menuOpen" (click)="toggleMenu()">
+                <div class="overlaycontent" (click)="$event.stopPropagation()"> 
+                    <ul class="router1">
+                        <li class="li">
+                            <a routerLink="/" routerLinkActive="mimdinare" [routerLinkActiveOptions]="{exact:true} " (click)="closeMenu()" >Home</a>
+                        </li> 
+                        <li class="li">
+                            <a routerLink="/product" routerLinkActive="mimdinare" [routerLinkActiveOptions]="{exact:true}"  (click)="closeMenu()" >All Product</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="conteiner">
+             <div class="li">
+                <button class="btn" (click)="toggle()"><img [src]="basket"alt="basket" class="imge"></button>
+                <app-kalata [isOpen]="showCart" (closeAside)="showCart = false" class="border">  </app-kalata>
+            </div>
+            <div class="box1">
+                <div class="header">
+                    <li routerLink="/auth">login</li>
+                </div>
+                   @if (!isLoggedIn) {
+                    <li routerLink="/auth">Autorization</li>
+                    }
+                <div>
+                    @if (isLoggedIn()) {
+                    <button (click)="signout()"  class="out">Sign Out</button>}
+                </div>
+                <img [src]="image" alt="image" class="image">
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+

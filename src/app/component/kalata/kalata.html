@@ -1,0 +1,37 @@
+<div *ngIf="isOpen" class="cart-overlay" (click)="close()">
+  <aside class="cart-aside" (click)="$event.stopPropagation()">
+    <div class="header">
+      <h3>cart</h3>
+      <button (click)="close()" class="click">×</button>
+    </div>
+
+    <div *ngIf="cartItems.length > 0; else emptyCart" class="box">
+      <div class="cart" *ngFor="let item of cartItems; trackBy: trackById">
+        <div>
+          <img [src]="item.product.thumbnail" alt="photo" (error)="onImageError($event)"  class="img">
+        </div>
+        <div class="content">
+          <p class="title">{{ item.product.title }}</p>
+          <button (click)="card.decreaseQuantity(item.product._id)" class="min">-</button>
+          <span>{{ item.quantity }}</span>
+          <button (click)="card.increaseQuantity(item.product._id)" class="max">+</button>
+          <button (click)="card.removeFromCart(item.product._id)" class="delete">Delete</button>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <p>Total: {{ card.getTotalPrice() }} $</p>
+        <button class="checkout" (click)="checkout()" [disabled]="!isLoggedIn()">Checkout</button>
+        <p *ngIf="!isLoggedIn()" class="warning">⚠️Login is required to make a purchase</p>
+        <div  class="status">
+          @if (orderStatus) {
+          {{ orderStatus }}}</div>
+        <button (click)="card.clearCart()" class="clear">Clear Cart</button>
+      </div>
+    </div>
+    <ng-template #emptyCart>
+      <p>Your cart is empty 🛒</p>
+    </ng-template>
+  </aside>
+</div>
+
+

@@ -1,0 +1,546 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ 
+   
+ }
+
+
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    height: 154vh;
+    color: rgb(155, 235, 246);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.5);
+    border-bottom: 1px solid gray;
+   
+}
+.avatarImg{
+    width: 10vw;
+    height: 7vh;
+}
+
+h2{
+    padding-left: 40%;
+    color: rgb(155, 235, 246) ;
+    height: 7vh;
+    padding-top: 10%;
+}
+
+.signupForm{
+    display: flex;
+    flex-direction: column;
+    height: 250vh;
+    width: 90vw;
+
+} 
+
+
+
+
+
+.formSuccess{ 
+    display:none; 
+    color:green;
+
+
+}
+
+
+.field{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 80px;
+}
+
+.firstName{
+    border: 1px solid rgb(4, 109, 123);
+    height: 7vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 4%;
+    color: grey;
+
+   
+}
+
+
+
+.lastName{
+    border: 1px solid rgb(4, 109, 123);
+    height: 7vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 4%;
+    color: grey;
+}
+
+
+.parol{
+    
+    text-align: center;
+    font-size: 16px;
+    min-width: 10vw;
+    
+   
+  
+}
+
+.showPassword{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row-reverse;
+    width: 12vw;
+    padding-top: 5%; 
+
+}
+
+
+
+
+
+.age{
+    border: 1px solid rgb(4, 109, 123);
+    height: 7vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 4%;
+    color: grey;
+}
+
+.gender{
+    border: 1px solid rgb(4, 109, 123);
+    height: 7vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 4%;
+    color: grey;
+}
+
+.other{
+    color: grey;
+   background-color: rgba(126, 125, 125, 0.216);
+}
+
+.email{
+    border: 1px solid rgb(4, 109, 123);
+    height: 7vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 4%;
+    color: grey;
+}
+
+
+.field1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+  
+  
+}
+
+.password{
+    border: 1px solid rgb(4, 109, 123);
+    height: 6vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 2%;
+    color: grey;
+}
+
+.address{
+    border: 1px solid rgb(4, 109, 123);
+    height: 6vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 2%;
+    color: grey; 
+}
+.phone{
+    border: 1px solid rgb(4, 109, 123);
+    height: 6vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 2%;
+    color: grey; 
+}
+.zipcode{
+    border: 1px solid rgb(4, 109, 123);
+    height: 6vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 2%;
+    color: grey; 
+}
+
+.avatar{
+     border: 1px solid rgb(4, 109, 123);
+    height: 6vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 2%;
+    color: grey;
+}
+
+.primary{
+    width: 140px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 82, 1);
+    border-radius: 4px;
+    margin-top: 15%;
+}
+
+.success {
+  color: rgb(1, 94, 1);
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 901px) and (max-width: 1400px){
+
+.form{
+    max-height: 144vh;
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-height: 145vh;
+   
+ 
+}
+
+.row{
+    width: 100%;
+    gap:3%;
+   
+}
+
+.field{
+    width: 50vw;
+    align-items: center;
+}
+ 
+
+.field1{
+    width: 50vw;
+    align-items:center;
+}
+
+
+
+
+.firstName{
+ width: 40vw;
+
+
+   
+}
+
+
+
+.lastName{
+    width: 40vw;
+}
+.parol{
+ padding-top: 15%; 
+    font-size: 12px;
+    min-width: 25vw;
+    
+   
+  
+}
+
+.showPassword{
+    width: 15px;
+    padding-left: 70px;
+}
+
+.age{
+    width: 40vw;
+}
+
+.gender{
+   width: 40vw;
+}
+
+
+
+.email{
+ width: 40vw;
+}
+
+
+.password{
+   width: 40vw;
+   min-height: 7vh;
+ 
+}
+
+.address{
+  width: 40vw;
+}
+.phone{
+  width: 40vw;
+}
+.zipcode{
+  width: 40vw;
+}
+
+.avatar{
+    width: 40vw;
+}
+
+.primary{
+    width: 140px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 82, 1);
+    border-radius: 4px;
+    margin-top: 15%;
+}
+
+.success {
+  color: rgb(1, 94, 1);
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+} 
+
+
+
+
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+.form{
+    width: 90vw;
+    max-height: 143vh;
+    padding-bottom: 10px;
+   
+   
+}
+
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:3%;
+}
+
+.field{
+    width: 60vw;
+}
+
+.field1{
+    width: 60vw;
+    align-items:center;
+}
+
+
+
+
+.firstName{
+ width: 60vw;
+
+   
+}
+
+
+
+.lastName{
+    width: 60vw;
+}
+.parol{
+ 
+    font-size: 12px;
+    min-width: 25vw;
+    
+   
+  
+}
+
+.showPassword{
+    width: 15px;
+    padding-left: 70px;
+}
+
+.age{
+    width: 60vw;
+}
+
+.gender{
+   width: 60vw;
+}
+
+
+
+.email{
+ width: 60vw;
+}
+
+
+.password{
+   width: 60vw;
+   min-height: 7vh;
+ 
+}
+
+.address{
+  width: 60vw;
+}
+.phone{
+  width: 60vw;
+}
+.zipcode{
+  width: 60vw;
+}
+
+.avatar{
+    width: 60vw;
+}
+
+
+
+.success {
+
+  margin-top: 10px;
+}
+
+.error {
+
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<div class="box"> @if (product) {
+  <div class="content">
+    <div class="conteiner">
+        <p class="stock">stock{{product.stock}}</p> 
+        <p  class="item">{{product.price.discountPercentage}}% off</p>
+    </div>
+     <img
+      *ngIf="product.images?.length"
+        [src]="product.images[currentImageIndex]"
+        (error)="onImageError($event)"alt="{{ product.title }}" class="img"/>
+      <div class="slider">
+        <button (click)="nextImage()" class="nex">🔚</button>
+        <button (click)="prevImage()" class="nex">🔜</button>
+      </div>
+  </div>
+  <div class="box1">
+    <div class="price">
+      <span class="current"> New price {{ product.price.current }}{{ product.price.currency }}</span>
+       <span class="before" *ngIf="product.price.discountPercentage > 0">
+         Old price{{ product.price.beforeDiscount }} {{ product.price.currency }}
+      </span>
+    </div>
+    <div class="inbox">
+      <h2>{{ product.title }}</h2>
+      <p>Brand: {{ product.brand }}</p>
+      <p>Category: {{ product.category.name }}</p>       
+      <p><b>Rating </b> {{ product.rating }} ⭐</p>
+        <p class="percen">{{product.description}}</p>
+      <p >{{product.discountPercentage}}</p>
+      <button *ngIf="product.stock > 0" (click)="addToCart(product)" class="card"> Add to Cart</button>
+    </div>
+  </div>}
+</div>
