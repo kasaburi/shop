@@ -38,12 +38,12 @@ login() {
     next: (data: any) => {
       console.log("this is", data);
       sessionStorage.setItem("user", data.access_token);
-      this.successMessage = "✅ წარმატებით გაიარეთ ავტორიზაცია";
+      this.successMessage = "✅ Successfully authenticated.";
       this.router.navigate(['product']);
     },
     error: (err) => {
       console.error("Login error:", err);
-      this.errorMessage="ავტორიზაცია ვერ შესრულდა"
+      this.errorMessage="Authorization failed."
     }
   });
 }

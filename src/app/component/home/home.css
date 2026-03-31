@@ -31,14 +31,23 @@ section{
     flex-wrap: wrap;
     text-align: center;
     border-radius: 8px;
-    height: 70vh;
+    height: 68vh;
     width: 22vw;
     color: black;
  
 }
 
 
+.boxi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    height: 23vh;
 
+}
 
 
 .popup {
@@ -101,6 +110,7 @@ section{
    height: 10vh;
    width: 100%;
    justify-content: space-between;
+
    
 }
 .price{
@@ -113,14 +123,13 @@ section{
 }
 h4{
     color: red;
-    width: 80%;
-    height: 7vh;
+    width: 100%;
+
 }
 
 .img{
 
- width: 100%;       
-  height: auto;       
+ width: 100%;           
   max-height: 30vh;   
   object-fit: contain; 
   display: block;     
@@ -256,11 +265,6 @@ justify-content:space-around;
    max-height: 65vh;
 
 }
-h4{
-    height: 3vh;
-    width: 90%;
-  
-}
 
 h2{
     width: 80%;
@@ -269,13 +273,30 @@ section{
     width: 80%;
     margin-left: 20px;
 }
-.boxi{
-    padding-bottom: 30px;
-}
 
 .picture{
     max-height: 60vh;
 }
+h3{
+    padding-top: 40px;
+    width: 220px;
+
+}
+
+
+.card{
+    width: 180px;
+}
+
+.boxi{
+
+    max-height: 20vh;
+
+
+}
+
+
+
 }
 
 
@@ -285,9 +306,11 @@ section{
 
 
 
-@media screen and (min-width: 601px)  and (max-width: 950px){
+@media screen and (min-width: 620px)  and (max-width: 950px){
 
-
+.boxi{
+    width: 80%;
+}
 
 .inbox{
     padding: 0;
@@ -332,15 +355,16 @@ h2{
 
 section{
      display: grid;
+     width: 96vw;
     grid-template-columns: repeat(2,1fr);
 }
 
 
 .div1{
 justify-content:space-around;
-   width: 40vw;
+   width: 45vw;
    min-height: 50vh;
- 
+
 }
 .border{
     align-content: space-evenly;
@@ -358,9 +382,18 @@ h4{
 
 
 .card{
-    width: 25vw;
+    width: 180px;
     margin-bottom:15px;
 }
+
+h3{
+
+    padding-top: 40px;
+    width: 180px;
+}
+
+
+
 }
 
 
@@ -381,8 +414,12 @@ h4{
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 619px){
 
+
+.boxi{
+    width: 80%;
+}
 
 
 .inbox{
@@ -445,7 +482,11 @@ h2{
 
 }
 
+h3{
 
+    padding-top: 40px;
+    width: 150px;
+}
 
 
 section{
@@ -457,7 +498,7 @@ section{
 
 .div1{
     justify-content: space-around;
-   width: 60vw;
+   width: 90%;
    max-height: 70vh;
    height: auto;
 }
@@ -479,7 +520,7 @@ h4{
 }
 
 .card{
-    width: 25vw;
+    width: 140px;
     margin-bottom:15px;
 }
 }

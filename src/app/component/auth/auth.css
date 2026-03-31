@@ -2,7 +2,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
-    max-height: 180vh;
+    min-height: 160vh;
     justify-content: center;
     gap:8%;
     padding-top: 15%;
@@ -14,7 +14,7 @@ section{
 @media screen and (min-width: 901px) and (max-width: 1300px){
 
 section{
-    min-height: 165vh;
+    min-height: 145vh;
 
 
 }
@@ -29,7 +29,8 @@ section{
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 98%;
-    min-height: 165vh;
+    min-height: 145vh;
+
  
    
 }
@@ -40,8 +41,8 @@ section{
 
 @media screen and (max-width: 600px){
 section{
-    padding-top: 2%;
-    min-height: 260vh;
+    padding-top: 8%;
+    min-height: 240vh;
     
 }
 }

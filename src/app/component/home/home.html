@@ -1,7 +1,7 @@
 <div class="inbox">
   <div *ngIf="showPopup" class="popup">
-  📢  შესაძენად საჭიროა ავტორიზაციის გავლა
-  <button (click)="closePopup()">გასაგებია</button>
+  📢 Authorization is required to purchase.
+  <button (click)="closePopup()">ok</button>
 </div>
   <div class="picture" [style.background-image]="'url(' + currentImage + ')'">
     <div class="box">
@@ -17,7 +17,7 @@
     <div class="index"></div>
   </div>
     <section>
-      <div class="load">@if (loading) {იტვირთება...}</div>
+      <div class="load">@if (loading) {loading...}</div>
       <div *ngIf="error">{{ error }}</div>
       @if (!loading && !error && allProduct.length) {
       <div *ngFor="let item of allProduct; let i = index"class="div1">

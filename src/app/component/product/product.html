@@ -96,8 +96,9 @@
                             <a [routerLink]="['/card', item._id]"  class="link">{{ item.title }}</a>
                             <div class="border">
                                 <p class="rat"><b>Rating </b> {{ item.rating }} ⭐</p> 
-                                 <button *ngIf="item.stock > 0" (click)="addToCart(item)" class="card">Add to Cart
-                                </button>
+                                <button (click)="addToCart(item)" class="card" [disabled]="item.stock === 0"
+                                        [ngClass]="{'out-of-stock': item.stock === 0}">{{ item.stock > 0 ? 'Add to Cart' : 'Out of Stock' }}
+                                </button> 
                             </div>
                         </div>
                     </div>}

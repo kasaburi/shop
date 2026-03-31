@@ -56,12 +56,15 @@
 .img{
 
  width: 90%;       
-  height: auto;       
   max-height: 30vh;   
   object-fit: contain; 
-  display: block;     
+  display: block; 
 
 
+}
+
+.div1{
+  min-height: 40vh;
 }
 
 
@@ -77,7 +80,7 @@
 }
 
 .inbox{
-  border: 2px solid rgb(0, 247, 255);
+  border: 1px solid rgb(0, 247, 255);
   text-align: center;
   font-size: 20px;
   width: 40vw;
@@ -112,6 +115,7 @@
    width: 20vw;
    min-height: 8vh;
    padding-top: 8px;
+
   
 }
 
@@ -128,7 +132,7 @@
 }
 
 .category.active {
-  border: 2px solid #007BFF;
+  border: 1px solid #007BFF;
 }
 
 
@@ -148,7 +152,7 @@ background-color:white;
   height: 5vh;
   color: gray;
   box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.737);
-  border: 2px solid rgb(0, 247, 255);
+  border: 1px solid rgb(0, 247, 255);
   
 }
 
@@ -157,7 +161,7 @@ background-color:white;
   height: 5vh;
   color: gray;
   box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.737);
-  border: 2px solid rgb(0, 247, 255);
+  border: 1px solid rgb(0, 247, 255);
 }
   
 
@@ -166,21 +170,21 @@ background-color:white;
   height: 7vh;
   color: gray;
   box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.737);
-  border: 2px solid rgb(0, 247, 255);
+  border: 1px solid rgb(0, 247, 255);
 }
 .min{
   width: 10vw;
   height: 5vh;
   color: gray;
   box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.737);
-  border: 2px solid rgb(0, 247, 255);
+  border: 1px solid rgb(0, 247, 255);
 }
 .max{
   width: 10vw;
   height: 5vh;
   color: gray;
   box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.737);
-  border: 2px solid rgb(0, 247, 255);
+  border: 1px solid rgb(0, 247, 255);
 } 
 
 
@@ -190,7 +194,7 @@ background-color:white;
   height: 7vh;
   color: gray;
   box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.737);
-  border: 2px solid rgb(0, 247, 255);
+  border: 1px solid rgb(0, 247, 255);
 }
 
 
@@ -374,8 +378,7 @@ background-color:white;
   text-align: center;
   border-radius: 8px;
   height: auto;        
-  min-height: 250px; 
-  max-height: none;  
+  min-height: 35vh; 
   padding-bottom: 10px; 
 }
 
@@ -414,13 +417,18 @@ section{
     transition: box-shadow 0.3s ease;
     border: none;
     margin-left: 17%;
+    border-radius: 3px;
 } 
 
 .card:hover {
   box-shadow: 0 4px 10px rgba(87, 197, 3, 0.83);
 }
 
-
+.out-of-stock {
+  background-color: rgba(3, 94, 3, 0.675);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 
 
 .cat1{
@@ -627,6 +635,7 @@ margin-bottom: 5%;
   align-items: center;
   background: white;
   padding: 20px;
+  padding-top: 50px;
   border-radius: 10px;
   min-width: 300px;
   max-width: 500px;
@@ -678,8 +687,6 @@ margin-bottom: 5%;
 
 
 
-
-
 @media screen and (min-width: 1201px) and (max-width: 1500px){
 
 section{
@@ -693,13 +700,20 @@ margin-bottom: 10%;
 .img{
   max-height: 26vh;
 }
+
+
+.div1{
+  min-height: 300px;
+  width: 100%;
+}
+
+
 .products{
     justify-content: flex-start;
     gap:0;
     padding: 0;
    width: 25vw;
-   min-height: 380px;
-   height: auto; 
+   min-height:35vh;
    
 }
 
@@ -730,9 +744,12 @@ margin-bottom: 10%;
 
 .card{
   margin-bottom: 5%;
+
 }
 
-
+.popup-content{
+  padding-top: 50px;
+}
 .price{
   flex-direction: column;
   width: 20vw;
@@ -807,6 +824,7 @@ width: 120px;
  max-height: none; 
 
 
+
 }
 
 
@@ -823,8 +841,8 @@ section{
 .products{
     justify-content: space-between;
     padding: 0;
-   width: 30vw;
-   min-height: 55vh;
+   width: 35vw;
+   min-height: 40vh;
   
 
    
@@ -832,7 +850,9 @@ section{
 
  .div1{
   width: 100%;
- max-height: 15vh;
+  min-height: 250px;
+
+
 }
 .index{
   display: flex;
@@ -882,6 +902,14 @@ section{
 
 
 }
+
+
+h2{
+
+  min-height: 8vh;
+}
+
+
 .border{
   min-height: 5vh;
 }
@@ -894,6 +922,8 @@ section{
   width: 5vw;
   margin-left: 5%;
 }
+
+
 }
 
 
@@ -976,15 +1006,16 @@ section{
     gap:0;
     padding: 0;
    width: 40vw;
-   min-height:38vh;
-  padding-bottom: 10px;
+   max-height:450px;
+
 
    
 }
 
 .div1{
   width: 100%;
- max-height: 250px;
+ min-height: 250px;
+
 
 }
 .index{
@@ -1046,8 +1077,7 @@ section{
  padding-right: 30px;
   gap:0;
   padding: 0;
-  min-height: 110px;
-
+  min-height: 20vh;
 
 
 }
@@ -1059,7 +1089,8 @@ section{
 
 
 .border{
-  max-height: 8vh;
+  min-height: 5vh;
+  
 }
 
 
@@ -1178,15 +1209,14 @@ section {
     gap:0;
     padding: 0;
    width: 70vw;
-   min-height: 47vh;
-
+   min-height: 50vh;
    
 }
 
 .div1{
   width: 100%;
-  max-height: 30vh;
-  height: auto;
+  min-height: 30vh;
+
 }
 .index{
   display: flex;
@@ -1201,6 +1231,7 @@ section {
   width: 40vw;
 max-height: 5vh;
 margin-bottom: 40px;
+
 
 }
 
@@ -1218,6 +1249,7 @@ margin-bottom: 40px;
 .link{
   width: 88%;
   font-size: 14px;
+ 
 }
 .card{
   width: 30vw;

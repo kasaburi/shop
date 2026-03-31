@@ -34,6 +34,7 @@
     font-size: 14px;
 }
 .checkout{
+    background-color: green;
     border-radius: 9px;
     width: 10vw;
     height: 6vh;
@@ -68,6 +69,8 @@
 
 .delete{
     border-radius: 4px;
+    width: 120px;
+    height: 30px;
     background-color: green;
 
 }
@@ -96,14 +99,20 @@
     align-items: center;
     flex-direction: column;
 }
-
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
 .cart-footer{
     display: flex;
     flex-direction: column;
   
 }
 .clear{
-       border-radius: 9px;
+    border-radius: 9px;
+    background-color: red;
     width: 10vw;
     height: 6vh;
     text-align: center; 
@@ -112,6 +121,7 @@
 
 .status {
   color: green;
+
   font-size: 14px;
   font-weight: bold;
   margin: 10px;
@@ -181,10 +191,10 @@
 }
 
 .checkout{
-    width: 16vw;
+    width: 180px;
 }
 .clear{
-    width: 16vw;
+    width: 180px;
 }
 }
 
@@ -225,9 +235,14 @@
     text-align: center;
 }
 .checkout{
-    width: 120px;
+    width: 150px;
 }
 .clear{
-    width: 120px;
+    width: 150px;
+}
+
+img{
+    max-width: 90px;
+    max-height: 80px;
 }
 }

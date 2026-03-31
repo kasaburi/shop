@@ -80,7 +80,7 @@ rating:string=""
       next: (res: any) => {
         this.products = res;
       },
-      error: (err) => console.error("❌ პროდუქტების წამოღების შეცდომა:", err)
+      error: (err) => console.error("❌ Product pickup error :", err)
     });
 
 
@@ -279,7 +279,7 @@ loadProducts() {
       console.log("📦 პროდუქტების სია:", res);
       this.products = res.products; 
     },
-    error: err => console.error("❌ პროდუქციის წამოღების შეცდომა:", err)
+    error: err => console.error("❌ Product pickup error:", err)
   });
 }
 
@@ -302,8 +302,6 @@ loadProducts() {
       error: (err) => console.error(err)
     });
   }
-
-
 
 
 

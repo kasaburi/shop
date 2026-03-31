@@ -34,22 +34,22 @@
 
 .email{
     border: 2px solid rgb(155, 246, 201)  ;
-    height: 30px;
-    width: 170px;
+    height: 40px;
+    width: 250px;
     color: grey;
     text-align: center;
 }
 .password{
     border: 2px solid  rgb(155, 246, 201)  ;
-    height: 30px;
-    width: 170px;
+    height: 40px;
+    width: 250px;
     color: grey;
     text-align: center;
 }
 .submit{
      border: none;
-    height: 30px;
-    width: 130px;
+    height: 40px;
+    width: 200px;
     border-radius: 8px;
     background-color: rgb(1, 82, 1);
     color: rgb(242, 244, 244);
@@ -102,8 +102,12 @@ h2{
 }
 
 
-
-
+.email{
+  width: 80%;
+}
+.password{
+  width: 80%;
+}
 
 .error {
  min-width: 50%;
@@ -114,7 +118,9 @@ h2{
   max-height: 60vh;
   margin-left: 15px;
 }
-
+.submit{
+  width: 160px;
+}
 
 h2{
   padding-right: 26%;

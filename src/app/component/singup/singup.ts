@@ -50,7 +50,7 @@ export class Singup {
 
 register() {
   if (this.formInfo.invalid) {
-     this.errorMessage = "გთხოვთ შეავსოთ ყველა აუცილებელი ველი ❌";
+     this.errorMessage = "Please fill in all required fields. ❌";
     return;
   }
 
@@ -58,14 +58,14 @@ register() {
     (data: any) => {
       console.log("რეგისტრაციის პასუხი:", data);
       if (data) {
-       this.successMessage = "✅ რეგისტრაცია წარმატებულია!";
+       this.successMessage = "✅Registration is successful. !";
       } else {
-        alert("❌ რეგისტრაცია ვერ შესრულდა");
+        alert("Registration failed ❌");
       }
     },
     (err) => {
       console.error(err);
-       this.errorMessage = "რეგისტრაცია ვერ მოხერხდა ❌";
+       this.errorMessage =  "Registration failed ❌";
     }
   );
 }

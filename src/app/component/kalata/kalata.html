@@ -12,9 +12,11 @@
         </div>
         <div class="content">
           <p class="title">{{ item.product.title }}</p>
-          <button (click)="card.decreaseQuantity(item.product._id)" class="min">-</button>
-          <span>{{ item.quantity }}</span>
-          <button (click)="card.increaseQuantity(item.product._id)" class="max">+</button>
+          <div class="group">
+            <button (click)="card.decreaseQuantity(item.product._id)" class="min">-</button>
+            <span>{{ item.quantity }}</span>
+            <button (click)="card.increaseQuantity(item.product._id)" class="max">+</button>
+          </div>
           <button (click)="card.removeFromCart(item.product._id)" class="delete">Delete</button>
         </div>
       </div>

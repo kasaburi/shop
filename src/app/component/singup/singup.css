@@ -240,10 +240,12 @@ h2{
 
 
 
-@media screen and (min-width: 901px) and (max-width: 1400px){
+@media screen and (min-width: 901px) and (max-width: 1700px){
 
 .form{
-    max-height: 144vh;
+    min-height: 104vh;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 }
@@ -262,7 +264,9 @@ h2{
     display: flex;
     flex-direction: column;
     width: 50vw;
-    max-height: 145vh;
+    min-height: 35vh;
+    height: auto;
+    padding-bottom: 30px;
    
  
 }
@@ -400,8 +404,9 @@ h2{
 
 .form{
     width: 90vw;
-    max-height: 143vh;
-    padding-bottom: 10px;
+    min-height: 123vh;
+    height: auto;
+    padding-bottom: 50px;
    
    
 }
@@ -498,7 +503,6 @@ h2{
 
   margin-top: 10px;
 }
-
 
 
 
