@@ -247,7 +247,10 @@ h2{
     height: auto;
     padding-bottom: 30px;
 }
-
+.field{
+      min-height: 60px;
+    height: auto;
+}
 }
 
 
@@ -280,6 +283,8 @@ h2{
 .field{
     width: 50vw;
     align-items: center;
+    min-height: 60px;
+    height: auto;
 }
  
 
@@ -424,12 +429,15 @@ h2{
 
 .field{
     width: 60vw;
-
+ height: auto;
+  min-height: 60px;
 }
 
 .field1{
     width: 60vw;
     align-items:center;
+   
+   
 }
 
 
