@@ -225,18 +225,28 @@ h3{
     
 }
 
+
+
+a{
+    font-style: none;
+    text-decoration: none;
+      color: rgb(247, 248, 244);
+}
 .card{
-     box-shadow: 0px 2px 10px rgba(0, 134, 31, 0.5);
+  padding-top: 7px;
+  text-decoration: none;
+     box-shadow: 0px 2px 10px rgba(3, 3, 3, 0.955);
     background-color: rgb(3, 94, 3);
     width: 10vw;
     height: 5vh;
-    color: rgb(222, 246, 155);
-    text-decoration: none;
+    transition: box-shadow 0.3s ease;
+    border: none;
+    border-radius: 3px;
+} 
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(87, 197, 3, 0.83);
 }
-
-
-
-
 
 
 
@@ -470,9 +480,10 @@ h3{
 .best{
     width: 120px;
     max-height: 7vh;
+    margin-top: 10px;
 }
 h2{
-    width: 90%;
+    width: 90vw;
     font-size: 30px;
 }
 

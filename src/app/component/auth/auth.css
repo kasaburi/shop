@@ -42,7 +42,8 @@ section{
 @media screen and (max-width: 600px){
 section{
     padding-top: 8%;
-    min-height: 240vh;
+    min-height: 1200px;
+    height: auto;
     
 }
 }

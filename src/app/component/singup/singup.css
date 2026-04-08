@@ -404,7 +404,7 @@ h2{
 
 .form{
     width: 90vw;
-    min-height: 123vh;
+    min-height: 1000px;
     height: auto;
     padding-bottom: 50px;
    
@@ -417,11 +417,14 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 100%;
+     min-height: 200px;
+    height: auto;
     gap:3%;
 }
 
 .field{
     width: 60vw;
+
 }
 
 .field1{
@@ -434,6 +437,8 @@ h2{
 
 .firstName{
  width: 60vw;
+ min-height: 50px;
+ height: auto;
 
    
 }
@@ -442,9 +447,12 @@ h2{
 
 .lastName{
     width: 60vw;
+     min-height: 50px;
+    height: auto;
 }
 .parol{
- 
+     min-height: 20px;
+    height: auto;
     font-size: 12px;
     min-width: 25vw;
     
@@ -459,43 +467,59 @@ h2{
 
 .age{
     width: 60vw;
+     min-height: 50px;
+    height: auto;
 }
 
 .gender{
    width: 60vw;
+    min-height: 50px;
+    height: auto;
 }
 
 
 
 .email{
  width: 60vw;
+  min-height: 50px;
+ height: auto;
 }
 
 
 .password{
    width: 60vw;
-   min-height: 7vh;
+    min-height: 50px;
+    height: auto;
  
 }
 
 .address{
   width: 60vw;
+   min-height: 50px;
+ height: auto;
 }
 .phone{
   width: 60vw;
+   min-height: 50px;
+ height: auto;
 }
 .zipcode{
   width: 60vw;
+   min-height: 50px;
+ height: auto;
 }
 
 .avatar{
     width: 60vw;
+     min-height: 50px;
+ height: auto;
 }
 
 
 
 .success {
-
+ min-height: 50px;
+ height: auto;
   margin-top: 10px;
 }
 
@@ -508,7 +532,12 @@ h2{
 
 
 
+h2{
+    text-align: center;
+    padding: 0px;
+    padding-top: 20px;
 
+}
 
 
 

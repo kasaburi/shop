@@ -343,7 +343,6 @@ background-color:white;
 
 
 
-
 .card-content {
   display: flex;
   flex-direction: column;
@@ -560,16 +559,19 @@ margin-bottom: 5%;
 
 .popup-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  padding-top: 30px;
 
 }
+
+
 
 .close-btn {
   background: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   cursor: pointer;
 
 }
@@ -1118,8 +1120,16 @@ section{
 @media screen and (max-width: 500px){
 
 
+  .pop{
+width: 100px;
+  min-height: 35px;
+  height: auto;
+}
+
+
 .boot{
   padding-top: 10%;
+
 }
 
 .inbox{
@@ -1132,6 +1142,7 @@ section{
 .imge{
   border: none;
   background: none;
+ width: 25px;
 
 }
 .img1{
@@ -1142,6 +1153,7 @@ section{
 .min{
   width: 33vw;
   max-height: 25px;
+  height: auto;
 }
 .stock{
   width: 80px;
@@ -1154,22 +1166,21 @@ section{
 .max{
    width: 33vw;
   max-height: 25px;
+  height: auto;
 }
 
 .desc{
      width: 40vw;
   max-height: 45px;
+  height: auto;
 }
 .sort{
    width: 40vw;
   max-height: 45px;
+  height: auto;
 }
 
 
-.pop{
-width: 100px;
-
-}
 
 
 .filter-btn{
@@ -1181,10 +1192,12 @@ width: 100px;
   display: flex;
   padding: 20px;
   min-height: 25vh;
+  height: auto;
 }
 
 .filters{
   min-height: 45vh;
+  height: auto;
 }
 
 
@@ -1228,10 +1241,10 @@ section {
 }
 
 .border{
-  width: 40vw;
-max-height: 5vh;
-margin-bottom: 40px;
-
+  width: 70vw;
+max-height: 20vh;
+align-items: center;
+padding: 0px;
 
 }
 
@@ -1252,20 +1265,21 @@ margin-bottom: 40px;
  
 }
 .card{
-  width: 30vw;
-  margin-bottom: 5%;
-  min-height: 4vh;
+  width: 150px;
+  min-height: 40px;
+  margin: 0px;
 }
 .card-content{
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding: 0;
-  max-height: 100px;
+  max-height: 170px;
   width: 100%;
   align-items: center;
   text-align: center;
   padding-top: 5px;
+ 
 
 }
 

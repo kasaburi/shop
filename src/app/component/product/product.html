@@ -32,7 +32,7 @@
                     <div class="popup-overlay" (click)="closePopup()">
                         <div class="popup-content" (click)="$event.stopPropagation()">
                             <div class="popup-header">
-                                <h3   >Filters</h3>
+                                <h3 >Filters</h3>
                                 <button class="close-btn" (click)="closePopup()">✖</button>
                             </div>
                             <div class="dropdown-block">
@@ -97,7 +97,7 @@
                             <div class="border">
                                 <p class="rat"><b>Rating </b> {{ item.rating }} ⭐</p> 
                                 <button (click)="addToCart(item)" class="card" [disabled]="item.stock === 0"
-                                        [ngClass]="{'out-of-stock': item.stock === 0}">{{ item.stock > 0 ? 'Add to Cart' : 'Out of Stock' }}
+                                        [ngClass]="{'out-of-stock': item.stock === 0}">{{ item.stock > 0 ? 'Add to Cart' : 'Add to Cart' }}
                                 </button> 
                             </div>
                         </div>
