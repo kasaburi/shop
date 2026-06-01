@@ -10,7 +10,12 @@
     text-decoration:line-through;
 }
 
-
+.popup-header{
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+  
+}
 
 
 .stock{
@@ -64,7 +69,9 @@
 }
 
 .div1{
-  min-height: 40vh;
+  min-height: 25vh;
+  height: auto;
+
 }
 
 
@@ -410,7 +417,7 @@ section{
   text-decoration: none;
      box-shadow: 0px 2px 10px rgba(3, 3, 3, 0.955);
     background-color: rgb(3, 94, 3);
-    width: 10vw;
+    width: 12vw;
     height: 5vh;
     color: rgb(247, 248, 244);
     transition: box-shadow 0.3s ease;
@@ -557,21 +564,17 @@ margin-bottom: 5%;
 
 
 
-.popup-header {
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
-
-}
-
 
 
 .close-btn {
+  position: relative;
+  top: 40px;
+  left: 50px;
   background: transparent;
   border: none;
   font-size: 24px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-left: 120px;
+  padding-top: 10px;
   cursor: pointer;
 
 }
@@ -637,7 +640,7 @@ margin-bottom: 5%;
   align-items: center;
   background: white;
   padding: 20px;
-  padding-top: 50px;
+  padding-top: 90px;
   border-radius: 10px;
   min-width: 300px;
   max-width: 500px;
@@ -749,8 +752,11 @@ margin-bottom: 10%;
 
 }
 
+.popup-overlay{
+  top: 30px;
+}
 .popup-content{
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .price{
   flex-direction: column;
@@ -936,7 +942,6 @@ h2{
 
 
 @media screen and (min-width: 501px) and (max-width: 800px){
-
 
 
 
@@ -1269,6 +1274,8 @@ padding: 0px;
   min-height: 40px;
   margin: 0px;
 }
+
+
 .card-content{
   display: flex;
   justify-content: flex-start;
@@ -1289,7 +1296,6 @@ padding: 0px;
   bottom: 20px;
 
 }
-
 
 
 }

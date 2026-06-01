@@ -267,12 +267,14 @@ a{
 
 
 
+
 }
 
 .div1{
-justify-content:space-around;
    width: 29vw;
-   max-height: 65vh;
+   max-height: 55vh;
+   height: auto;
+   padding-bottom: 20px !important;
 
 }
 
@@ -280,7 +282,10 @@ h2{
     width: 80%;
 }
 section{
-    width: 80%;
+    width: 95%;
+    min-height: 150vh;
+    height: auto;
+    gap:50px;
     margin-left: 20px;
 }
 
@@ -296,27 +301,30 @@ h3{
 
 .card{
     width: 180px;
+    min-height: 30px;
 }
 
 .boxi{
 
+    min-height: 25vh;
+
+
+}
+
+.img{
     max-height: 20vh;
-
+}
 
 }
 
 
 
-}
 
 
 
 
 
-
-
-
-@media screen and (min-width: 620px)  and (max-width: 950px){
+@media screen and (min-width: 500px)  and (max-width: 950px){
 
 .boxi{
     width: 80%;
@@ -324,7 +332,8 @@ h3{
 
 .inbox{
     padding: 0;
-    min-height: 330vh;
+    min-height: 290vh;
+    height: auto;
     padding-top: 65px;
   
    
@@ -340,7 +349,7 @@ h3{
 }
 
 .img{
-    min-height: 30vh;
+    max-height: 25vh;
 }
 
 
@@ -373,11 +382,13 @@ section{
 .div1{
 justify-content:space-around;
    width: 45vw;
-   min-height: 50vh;
+   max-height: 65vh;
+   height: auto;
+   padding-bottom: 15px;
 
 }
 .border{
-    align-content: space-evenly;
+    align-content: space-around;
 
 }
 .price{
@@ -393,7 +404,7 @@ h4{
 
 .card{
     width: 180px;
-    margin-bottom:15px;
+    min-height: 35px;
 }
 
 h3{
@@ -424,7 +435,7 @@ h3{
 
 
 
-@media screen and (max-width: 619px){
+@media screen and (max-width: 500px){
 
 
 .boxi{
@@ -435,7 +446,8 @@ h3{
 .inbox{
     padding: 0;
     padding-top: 68px;
-    min-height: 440vh;
+    min-height: 530vh;
+    height: auto;
  
 
 }
@@ -450,10 +462,6 @@ h3{
 .stock{
     width: 20vw;
 }
-
-
-
-
 
 
 
@@ -504,14 +512,18 @@ section{
      display: grid;
     justify-items: center;
     grid-template-columns: repeat(1,1fr);
+    height: auto;
+    min-height: 300vh;
 }
 
 
 .div1{
-    justify-content: space-around;
-   width: 90%;
-   max-height: 70vh;
+    justify-content: space-between;
+    padding-bottom: 30px;
+   width: 80vw;
+   min-height: 55vh;
    height: auto;
+   gap:20px;
 }
 .border{
     align-content: space-evenly;
@@ -532,6 +544,8 @@ h4{
 
 .card{
     width: 140px;
-    margin-bottom:15px;
+    margin-bottom:25px;
+    min-height: 40px;
+    height: auto;
 }
 }
