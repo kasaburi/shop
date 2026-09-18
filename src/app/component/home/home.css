@@ -81,9 +81,11 @@ section{
 .popup button {
   margin-top: 10px;
   padding: 5px 10px;
+  min-width: 20vw;
   cursor: pointer;
-  background-color: green;
+  background-color: rgb(2, 100, 2);
   border-radius: 7px;
+  color: white;
 }
 .load{
     position: fixed;
@@ -205,7 +207,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-     box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.5);
+     box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.248);
     height: 15vh;
     width: 100%;
 
@@ -235,17 +237,18 @@ a{
 .card{
   padding-top: 7px;
   text-decoration: none;
-     box-shadow: 0px 2px 10px rgba(3, 3, 3, 0.955);
-    background-color: rgb(3, 94, 3);
+     box-shadow: 0px 2px 10px rgba(6, 90, 150, 0.256);
+    background-color: rgba(6, 90, 150, 0.819);
     width: 10vw;
+
     height: 5vh;
     transition: box-shadow 0.3s ease;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px;
 } 
 
 .card:hover {
-  box-shadow: 0 4px 10px rgba(87, 197, 3, 0.83);
+  box-shadow: 0 4px 10px rgba(3, 78, 131, 0.819);
 }
 
 

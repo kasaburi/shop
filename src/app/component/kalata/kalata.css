@@ -18,6 +18,7 @@
     border: none;
     color: red;
     font-size: 44px;
+
 }
 
 .warning{
@@ -34,11 +35,18 @@
     font-size: 14px;
 }
 .checkout{
-    background-color: green;
+    background-color: rgba(6, 90, 150, 0.819);
     border-radius: 9px;
+    color: rgba(0, 0, 0, 0.693);
     width: 10vw;
     height: 6vh;
     text-align: center;
+    border: none;
+}
+
+
+.checkout{
+     background-color: rgba(3, 62, 104, 0.819);
 }
 .cart-overlay {
     position: fixed;
@@ -71,21 +79,27 @@
     border-radius: 4px;
     width: 120px;
     height: 30px;
-    background-color: green;
+    background-color: red;
+    border: none;
 
 }
+
+.delete:hover{
+     background-color: rgb(183, 7, 7);
+}
+
 .max{
      border: none;
     background-color: black;
     font-size: 25px;
-    color: red;
+    color: rgb(0, 183, 255);
 }
 
 .min{
     border: none;
     background-color: black;
     font-size: 25px;
-    color: red;
+    color: rgb(0, 183, 255);
 }
 .inbox{
     display: flex;
@@ -113,11 +127,16 @@
 .clear{
     border-radius: 9px;
     background-color: red;
+    border: none;
     width: 10vw;
     height: 6vh;
     text-align: center; 
 }
 
+
+.clear:hover{
+background-color: rgb(136, 2, 2);
+}
 
 .status {
   color: green;
