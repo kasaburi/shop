@@ -56,6 +56,9 @@ section{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 10vh;
+  padding: 8px;
+  height: auto;
   gap: 10px;
   top: 50%;
   left: 50%;
@@ -81,9 +84,11 @@ section{
 .popup button {
   margin-top: 10px;
   padding: 5px 10px;
-  min-width: 20vw;
+   width: 250px;;
+   height: 46px;
   cursor: pointer;
-  background-color: rgb(2, 100, 2);
+    box-shadow: 0px 2px 10px rgba(6, 90, 150, 0.256);
+    background-color: rgba(6, 90, 150, 0.819);
   border-radius: 7px;
   color: white;
 }
@@ -99,10 +104,11 @@ section{
     align-items: center;
     justify-content: center;
     width: 80px;
-    background-color: red;
+    background: red;
+    color: white;
     height: 5vh;
     transform: skewY(-25deg);
-     box-shadow: 0px 6px 13px rgba(22, 22, 22, 0.422);
+     box-shadow: 0px 6px 13px rgba(22, 22, 22, 0.208);
 
      
 }

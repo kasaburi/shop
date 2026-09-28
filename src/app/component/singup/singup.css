@@ -62,12 +62,15 @@ h2{
 }
 
 .firstName{
-    border: 1px solid rgb(4, 109, 123);
+    border: 1px solid rgba(6, 90, 150, 0.819);
     height: 7vh;
     width: 20vw;
     text-align: center;
     margin-top: 4%;
     color: grey;
+    border-radius: 8px;
+
+  
 
    
 }
@@ -75,7 +78,8 @@ h2{
 
 
 .lastName{
-    border: 1px solid rgb(4, 109, 123);
+    border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 7vh;
     width: 20vw;
     text-align: center;
@@ -111,7 +115,8 @@ h2{
 
 
 .age{
-    border: 1px solid rgb(4, 109, 123);
+     border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 7vh;
     width: 20vw;
     text-align: center;
@@ -120,7 +125,8 @@ h2{
 }
 
 .gender{
-    border: 1px solid rgb(4, 109, 123);
+      border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 7vh;
     width: 20vw;
     text-align: center;
@@ -134,7 +140,8 @@ h2{
 }
 
 .email{
-    border: 1px solid rgb(4, 109, 123);
+     border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 7vh;
     width: 20vw;
     text-align: center;
@@ -154,7 +161,8 @@ h2{
 }
 
 .password{
-    border: 1px solid rgb(4, 109, 123);
+      border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 6vh;
     width: 20vw;
     text-align: center;
@@ -163,7 +171,8 @@ h2{
 }
 
 .address{
-    border: 1px solid rgb(4, 109, 123);
+      border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 6vh;
     width: 20vw;
     text-align: center;
@@ -171,7 +180,8 @@ h2{
     color: grey; 
 }
 .phone{
-    border: 1px solid rgb(4, 109, 123);
+      border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 6vh;
     width: 20vw;
     text-align: center;
@@ -179,7 +189,8 @@ h2{
     color: grey; 
 }
 .zipcode{
-    border: 1px solid rgb(4, 109, 123);
+      border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 6vh;
     width: 20vw;
     text-align: center;
@@ -188,7 +199,8 @@ h2{
 }
 
 .avatar{
-     border: 1px solid rgb(4, 109, 123);
+      border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     height: 6vh;
     width: 20vw;
     text-align: center;
@@ -197,11 +209,12 @@ h2{
 }
 
 .primary{
-    width: 140px;
+    width: 240px;
     height: 40px;
     color: rgb(255, 255, 255);
-    background-color: rgb(1, 82, 1);
-    border-radius: 4px;
+    background-color:  rgba(6, 90, 150, 0.819);
+     border: 1px solid rgba(6, 90, 150, 0.819);
+    border-radius: 8px;
     margin-top: 15%;
 }
 
@@ -240,18 +253,6 @@ h2{
 
 
 
-@media screen and (min-width: 901px) and (max-width: 1700px){
-
-.form{
-    min-height: 104vh;
-    height: auto;
-    padding-bottom: 30px;
-}
-.field{
-      min-height: 60px;
-    height: auto;
-}
-}
 
 
 
@@ -259,7 +260,7 @@ h2{
 
 
 
-@media screen and (min-width: 601px) and (max-width: 900px){
+@media screen and (min-width: 601px) and (max-width: 1200px){
 
 
 
@@ -270,6 +271,7 @@ h2{
     min-height: 35vh;
     height: auto;
     padding-bottom: 30px;
+ 
    
  
 }
@@ -358,11 +360,8 @@ h2{
 }
 
 .primary{
-    width: 140px;
+    width: 240px;
     height: 40px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(1, 82, 1);
-    border-radius: 4px;
     margin-top: 15%;
 }
 
@@ -412,6 +411,8 @@ h2{
     min-height: 1000px;
     height: auto;
     padding-bottom: 50px;
+    border: none;
+    box-shadow: none;
    
    
 }

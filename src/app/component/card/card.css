@@ -22,7 +22,7 @@
     position: relative;
     top: 70px;
     right: 6%;
-    font-size: 20px;
+    font-size: 16x;
     color: red;
     font-weight: bolder;
 }
@@ -41,7 +41,7 @@ h2{
 }
 .before{
     color: red;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration:line-through;
 }
 
@@ -71,7 +71,8 @@ h2{
 display: flex;
 align-items: center;
 padding-left: 13%;
-height: 95vh;
+min-height: 95vh;
+height: auto;
 padding-top: 5%;
 
 }
@@ -83,7 +84,7 @@ padding-top: 5%;
     border-radius: 8px;
 }
 .percen{
-  font-size: 17px;
+  font-size: 14px;
   height: 20vh;
   width: 80%;
 }
@@ -94,19 +95,23 @@ padding-top: 5%;
     align-items: center; 
     text-align: center;
     flex-direction: column;
-    height: 65vh;
+    min-height: 70vh;
+     max-height: 70vh;
+    padding-bottom:  32px;
+    height: auto;
     width: 40vw;
     margin-left: 5%;
     border-radius: 8px;
      box-shadow: 0px 2px 10px rgba(3, 136, 169, 0.5);
 }
 .card{
-  box-shadow: 0px 2px 10px rgba(0, 134, 31, 0.5);
-    background-color: rgb(3, 94, 3);
-    width: 10vw;
-    min-height: 5vh;
-    color: rgb(222, 246, 155);
- margin-bottom: 5%;
+      box-shadow: 0px 2px 10px rgba(6, 90, 150, 0.256);
+    background-color: rgba(6, 90, 150, 0.819);
+    width: 250px;
+    min-height: 48px;
+    color: white;
+    border: 1px solid rgba(6, 90, 150, 0.819);
+  border-radius: 8px;
 }
 
 .stock{
@@ -130,7 +135,7 @@ padding-top: 5%;
   min-height: 100px;
   border: none;
   background: none;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 
@@ -150,15 +155,17 @@ width:100%;
 }
 
 .content{
-  min-width: 45vw;
+  width: 35vw;
   padding: 0;
   margin: 0;
-  max-height: 60vh;
+  min-height: 20vh;
+  height: auto;
+  border: 2px solid red;
 
 }
 .img{
   width: 100%;
-  min-height: 50vh;
+  height: auto;
 }
 
 
@@ -173,14 +180,15 @@ width:100%;
 
 
 .card{
-  width: 140px
+  width: 240px
 }
 
  .box1{
  justify-content: flex-start;
-  width: 43vw;
+  width: 50vw;
   margin-top: 10%;
-  min-height: 70vh;
+  min-height: 50vh;
+  height: auto;
   padding: 10px;
 
 } 
@@ -299,7 +307,9 @@ padding-left:5%;
   align-content: center;
   justify-content: center;
   width: 80vw;
-  min-height: 55vh;
+  min-height: 35vh;
+  height: auto;
+  padding-top: 32px;
   padding: 15px;
 
 } 
@@ -378,12 +388,14 @@ padding-top: 15%;
 
 .content{
   width: 90%;
+  max-height: 40vh;
+  height: auto;
 
 }
 .img{
-  width: 90%;
-  max-height: 40vh;
-  padding-left: 17px;
+  width: 100%;
+   max-height: 40vh;
+  height: auto;
 
 }
 .conteiner{
@@ -393,11 +405,18 @@ padding-top: 15%;
 
 .box{
   padding: 0;
-  padding-top: 10%;
+ gap:16%;
+
+ padding-top: 80px !important;
   flex-direction: column;
   align-items: center;
-  min-height: 150vh;
+  justify-content: space-around;
+  min-height: 120vh;
+  height: auto;
+  padding: 8px;
   width: 100%;
+
+
 
  
 }
@@ -411,13 +430,15 @@ padding-top: 15%;
 }
 
 .card{
-  width: 140px
+  width: 240px
 }
 
  .box1{
   width: 80%;
   padding: 15px;
-  min-height: 54vh;
+  min-height: 45vh;
+  padding-bottom: 48px;
+  height: auto;
 
 } 
 

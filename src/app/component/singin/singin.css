@@ -33,29 +33,32 @@
 }
 
 .email{
-    border: 2px solid rgb(155, 246, 201)  ;
+    border: 2px solid rgba(6, 90, 150, 0.819) ;
     height: 40px;
     width: 250px;
     color: grey;
     text-align: center;
+    border-radius: 8px;
 }
 .password{
-    border: 2px solid  rgb(155, 246, 201)  ;
+    border: 2px solid  rgba(6, 90, 150, 0.819) ;
     height: 40px;
     width: 250px;
     color: grey;
     text-align: center;
+    border-radius: 8px;
 }
 .submit{
      border: none;
     height: 40px;
     width: 200px;
     border-radius: 8px;
-    background-color: rgb(1, 82, 1);
+    box-shadow: 0px 2px 10px rgba(6, 90, 150, 0.256);
+    background-color: rgba(6, 90, 150, 0.819);
     color: rgb(242, 244, 244);
 }
 .submit:hover{
-  background-color: rgb(0, 75, 0);
+  background-color: rgba(4, 78, 131, 0.819);
 }
 h2{
   padding-left: 30%;
@@ -104,6 +107,7 @@ h2{
 
 .email{
   width: 80%;
+
 }
 .password{
   width: 80%;
